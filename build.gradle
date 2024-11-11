@@ -25,14 +25,13 @@ repositories {
 }
 
 dependencies {
-    implementation(files("depends/packetevents-585.jar"))
     implementation(project(':api'))
     implementation 'com.github.cryptomorin:XSeries:11.2.2'
     implementation 'com.google.guava:guava:33.3.1-jre'
     implementation 'com.google.code.gson:gson:2.11.0'
 
     compileOnly 'org.spigotmc:spigot-api:1.21.3-R0.1-SNAPSHOT'
-
+    implementation 'com.github.retrooper:packetevents-spigot:2.6.0'
     compileOnly 'org.projectlombok:lombok:1.18.34'
     annotationProcessor 'org.projectlombok:lombok:1.18.34'
 
@@ -58,7 +57,6 @@ shadowJar {
     relocate 'okio', 'net.square.sierra.okio'
     relocate 'javax.annotation', 'net.square.sierra.javax.annotation'
     relocate 'com.github.retrooper.packetevents', 'net.square.sierra.packetevents.api'
-    relocate 'io.github.retrooper.packetevents', 'net.square.sierra.packetevents.api'
     relocate 'org.bstats', 'net.square.sierra.bstats'
     archiveFileName = "${project.name}-${project.version}.jar"
 }
