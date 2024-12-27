@@ -28,7 +28,8 @@ public class InitBStats implements Initable {
      */
     @Override
     public void start() {
-        Metrics metrics = new Metrics(Sierra.getPlugin(), PLUGIN_ID);
+        Metrics metrics = new io.github.retrooper.packetevents.bstats.bukkit.Metrics(Sierra.getPlugin(), PLUGIN_ID);
+
         metrics.addCustomChart(new SingleLineChart(
             "bans",
             () -> {
