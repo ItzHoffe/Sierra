@@ -25,7 +25,10 @@ repositories {
 
 dependencies {
     implementation(project(':api'))
-    implementation 'com.github.cryptomorin:XSeries:13.3.1'
+    implementation('com.github.retrooper:packetevents-spigot:2.8.0') {
+        changing = true
+    }
+    implementation 'com.github.cryptomorin:XSeries:13.3.2'
     implementation 'com.google.guava:guava:33.4.8-jre'
     implementation 'com.google.code.gson:gson:2.13.1'
 
