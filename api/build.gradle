@@ -38,8 +38,8 @@ publishing {
 }
 
 dependencies {
-    compileOnly 'org.spigotmc:spigot-api:1.21.5-R0.1-SNAPSHOT'
-    implementation('com.github.retrooper:packetevents-spigot:2.7.0') {
+    compileOnly 'org.spigotmc:spigot-api:1.21.7-R0.1-SNAPSHOT'
+    implementation('com.github.retrooper:packetevents-spigot:2.8.0') {
         changing = true
     }
 
